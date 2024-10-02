@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Web Page Layout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <header class="navbar">
+            <nav>
+                <div class="logo-container">
+                    <img src="logo.png" alt="Logo" class="logo">
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <hr class="divider"> <!-- Divider between navbar and hero section -->
+
+        <section class="main-content">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Luxurious Apartment Living</h1>
+                    <p>
+                        Experience the pinnacle of luxury in our high-end apartments. Designed for comfort and elegance,
+                        our living spaces offer stunning city views and top-tier amenities.
+                    </p>
+                </div>
+                <div class="hero-button">
+                    <a href="#" class="explore-btn">Explore</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="rooms">
+
+        <h1>
+            Sample Text
+        </h1>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Your Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
